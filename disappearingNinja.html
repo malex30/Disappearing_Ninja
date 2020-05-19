@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disppearing Ninja</title>
+    <link rel="stylesheet" type="text/css" href="disappearingNinja.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+
+            alert('Try if you can to catch the Ninja!');
+            
+            $('img.ninja').click(function(random){
+                $(this).addClass('hideNinja');
+            });
+
+            $('button').click(function(){
+                $('img.ninja').removeClass('hideNinja');
+            });
+
+           $('img.ninja').click(function(){
+            var min = 1;
+            var max = 8;
+
+            function winner (){
+            return min + Math.floor(Math.random() * max-min);
+            }
+            $('img.ninja').show('<img src="https://www.olin.edu/sites/default/files/blog_archives/olinformer/michael-scott-win-win-win.jpg" alt ="winner">')
+            });
+
+        })
+    </script>
+</head>
+<body>
+    <div id="container">
+        <h1>Disappearing Ninja</h1>
+        <div id="ninjaBox">
+            <img class="ninja 1" src="https://cdn.shopify.com/s/files/1/2040/0303/products/Cool_Kid_Ninja_Cartoon_Icon_7_658326334_grande.jpg?v=1518300653" alt="cartoon ninja squatting to his left" >
+            <img class="ninja 2" src="https://cdn.shopify.com/s/files/1/2040/0303/products/Cool_Kid_Ninja_Cartoon_Icon_7_658326334_grande.jpg?v=1518300653" alt="cartoon ninja squatting to his left" >
+            <img class="ninja 3" src="https://cdn.shopify.com/s/files/1/2040/0303/products/Cool_Kid_Ninja_Cartoon_Icon_7_658326334_grande.jpg?v=1518300653" alt="cartoon ninja squatting to his left" >
+            <img class="ninja 4" src="https://cdn.shopify.com/s/files/1/2040/0303/products/Cool_Kid_Ninja_Cartoon_Icon_7_658326334_grande.jpg?v=1518300653" alt="cartoon ninja squatting to his left" >
+            <img class="ninja 5" src="https://cdn.shopify.com/s/files/1/2040/0303/products/Cool_Kid_Ninja_Cartoon_Icon_7_658326334_grande.jpg?v=1518300653" alt="cartoon ninja squatting to his left" >
+            <img class="ninja 6" src="https://cdn.shopify.com/s/files/1/2040/0303/products/Cool_Kid_Ninja_Cartoon_Icon_7_658326334_grande.jpg?v=1518300653" alt="cartoon ninja squatting to his left" >
+            <img class="ninja 7" src="https://cdn.shopify.com/s/files/1/2040/0303/products/Cool_Kid_Ninja_Cartoon_Icon_7_658326334_grande.jpg?v=1518300653" alt="cartoon ninja squatting to his left" >
+            <img class="ninja 8" src="https://cdn.shopify.com/s/files/1/2040/0303/products/Cool_Kid_Ninja_Cartoon_Icon_7_658326334_grande.jpg?v=1518300653" alt="cartoon ninja squatting to his left" >
+        </div>
+        <button id="restore">Restore</button>
+    </div>    
+</body>
+</html>

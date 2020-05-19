@@ -1,0 +1,26 @@
+#container{
+    width:1000px;
+    height:750px;
+    background-color: black;
+    margin: 0 auto;
+}
+h1{
+    color:white;
+    text-align: center;
+    margin: 15px auto;
+}
+div#ninjaBox{
+    padding:25px;
+}
+img{
+    width:220px;
+    margin: 0 auto;
+    padding: 6px;
+}
+.hideNinja{
+    visibility: hidden;
+}
+button{
+    display: block;
+    margin-left: 30px;
+}
